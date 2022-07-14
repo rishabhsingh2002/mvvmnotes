@@ -9,7 +9,6 @@ class NotesRepository(val dao: NotesDao) {
     fun getAllNotes(): LiveData<List<Notes>> {
         return dao.getNotes()
     }
-this is the error
     fun insertNotes(notes: Notes) {
         dao.insertNotes(notes)
     }
@@ -33,4 +32,5 @@ this is the error
     fun getLowNotes(): LiveData<List<Notes>> {
         return dao.getHLowNotes()
     }
+    this is funcked up
 }
