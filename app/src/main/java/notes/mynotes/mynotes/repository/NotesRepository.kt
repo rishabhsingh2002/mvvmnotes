@@ -32,5 +32,4 @@ class NotesRepository(val dao: NotesDao) {
     fun getLowNotes(): LiveData<List<Notes>> {
         return dao.getHLowNotes()
     }
-    this is funcked up
 }
